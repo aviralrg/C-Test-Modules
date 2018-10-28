@@ -60,4 +60,4 @@ vim -S sessionname	- to load the session
 Miscelanious
 ----------------------------------------------------------------------
 
-ctrl-o :norm ni-	- to insert '-' n times
+:norm ni-	- to insert '-' n times
