@@ -12,16 +12,21 @@ s		- delete char and enter insert mode
 ----------------------------------------------------------------------
 Normal mode navigation commands
 ----------------------------------------------------------------------
+
 w		- forward on word
 b		- backword one word
 gg		- jump to start of file
 G		- jump to end of file
 ctrl-o		- jump back
+ctrl-i		- jump forward
+
+
 ----------------------------------------------------------------------
 Normal mode operation
 ----------------------------------------------------------------------
 x		- delete character
 dd		- delete line
+
 
 ----------------------------------------------------------------------
 Insert mode commands
@@ -29,18 +34,22 @@ Insert mode commands
 ctrl p/n		- complete matching previous/next word
 ctrl-o			- enter normal mode for one command
 
+
 ----------------------------------------------------------------------
 Text objects
 ----------------------------------------------------------------------
 w/W		- small word / big word
+p		- paragraph
+s		- sentence
+b		- block
 
 ----------------------------------------------------------------------
 atomic edits
 ----------------------------------------------------------------------
 
 verb noun commands
-verb 		- operation to perform (c/d)
-noun 		- text objects 
+verb 		- operation to perform (c/d/y)
+noun 		- text objects(w/p/s/b) 
 pronoun 	- more meaningful text objects(i/t)
 
 
@@ -61,3 +70,5 @@ Miscelanious
 ----------------------------------------------------------------------
 
 :norm ni-	- to insert '-' n times
+ctrl +		- zoom in
+ctrl -		- zoom out
