@@ -13,8 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: location
+    - name: gcc
       run: sudo apt-get install gcc
+    - name: location
+      run: cd 01_macro_debug_print
     - name: make
       run: make
     - name: make check
