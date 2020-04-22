@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
+    - name: location
+      run: cd 01_macro_debug_print
     - name: make
       run: make
     - name: make check
