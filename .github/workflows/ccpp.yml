@@ -19,7 +19,9 @@ jobs:
       run: cd 01_macro_debug_print
     - name: make
       run: cd 01_macro_debug_print && make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: make debug
+      run: cd 01_macro_debug_print && make debug
+    - name: make process
+      run: cd 01_macro_debug_print && make process
+    - name: make process_debug
+      run: cd 01_macro_debug_print && make process_debug
