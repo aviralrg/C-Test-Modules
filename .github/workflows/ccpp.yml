@@ -15,6 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: location
       run: cd 01_macro_debug_print
+      run: sudo apt-get install gcc
     - name: make
       run: make
     - name: make check
