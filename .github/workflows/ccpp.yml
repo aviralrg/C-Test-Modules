@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: gcc
+      run: sudo apt-get install gcc
+    - name: location
+      run: cd 01_macro_debug_print
+    - name: make
+      run: cd 01_macro_debug_print && make
+    - name: make debug
+      run: cd 01_macro_debug_print && make debug
